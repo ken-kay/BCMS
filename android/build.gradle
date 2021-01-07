@@ -1,0 +1,51 @@
+buildscript {
+    //ext.kotlin_version = '1.3.61'
+    //ext.kotlin_version = '1.3.72'
+    ext.kotlin_version = '1.4.0'
+    repositories {
+        google()
+        jcenter()
+        mavenCentral() //tried to fix the Maven issue
+    }
+
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        //classpath 'com.android.tools.build:gradle:6.1.1'
+        //classpath 'com.android.tools.build:gradle:3.5.3'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath 'com.google.gms:google-screens.services:4.3.3'
+        classpath 'com.google.gms:google-services:4.3.3'
+
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+//added this module for the project
+/*
+ext {
+    compiledSdkVersion = 28
+    supportLibVersion = "28.0.0"
+}
+ */
+
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

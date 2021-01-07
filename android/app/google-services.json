@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "341324433566",
+    "firebase_url": "https://bcms-6e0b9.firebaseio.com",
+    "project_id": "bcms-6e0b9",
+    "storage_bucket": "bcms-6e0b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341324433566:android:4a1060dac863a49e1fd38f",
+        "android_client_info": {
+          "package_name": "com.nani.bcms_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341324433566-9bdd8b6sfsutupt1jilqt33p6n6nedc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAFWeAh8xAqthnhoZDHFiyBMfDoZNYck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341324433566-9bdd8b6sfsutupt1jilqt33p6n6nedc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
