@@ -141,8 +141,8 @@ class Side extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context)=>Teacher()),
-                //builder:(context)=>Move()),
+                   // builder: (context)=>Teacher()),
+                  builder:(context)=>PinPutTest()),
               );
             },
           ),
