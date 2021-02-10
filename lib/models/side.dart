@@ -133,6 +133,7 @@ class Side extends StatelessWidget {
             },
           ),
 
+          /*
           ListTile(
             leading: Icon(Icons.person_outline),
             title: Text('Teachers'),
@@ -146,6 +147,7 @@ class Side extends StatelessWidget {
               );
             },
           ),
+          */
 
           //logout function
           FlatButton.icon(

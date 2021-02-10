@@ -29,8 +29,8 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
 
 android {
-    //compileSdkVersion 29
-    compileSdkVersion 28
+    compileSdkVersion 29
+    //compileSdkVersion 28
 
     lintOptions {
         disable 'InvalidPackage'
@@ -41,8 +41,8 @@ android {
         applicationId "com.nani.bcms_app"
         //minSdkVersion 16
         minSdkVersion 21
-        //targetSdkVersion 29
-        targetSdkVersion 28
+        targetSdkVersion 29
+        //targetSdkVersion 28
         //multidex addition
         multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
@@ -63,7 +63,7 @@ android {
     }
 
     //added this section to try fixing reimport issue
-    /*
+   // /*
     compileOptions {
         //enable support for new language APIs
         coreLibraryDesugaringEnabled true
@@ -71,7 +71,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    */
+   // */
 
 }
 
@@ -84,18 +84,21 @@ dependencies {
     //implementation "androidx.appcompat:appcompat:1.1.0"
     //implementation "com.google.android.material:material:1.1.0"
         //for appcompat support
-    //implementation "com.android.support:support-compat:29.0.0"
-    implementation "com.android.support:support-compat:28.0.0"
+    implementation "com.android.support:support-compat:29.0.0"
+    //implementation "com.android.support:support-compat:28.0.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    testImplementation 'junit:junit:4.12'
+    //testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test:runner:1.3.0'
     //androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //Firebase SDK for Google Analytics
-    implementation 'com.google.firebase:firebase-analytics:17.5.0'
-        //multidex implementation
+    //implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+
+    //multidex implementation
     implementation 'com.android.support:multidex:1.0.3'
 }
 

@@ -726,7 +726,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: a05dfc24e926e98654d006c989debf73b512d6e8
+      resolved-ref: ce9efdd0629bcc0831f8deb18d3f86d3f27f6889
       url: "git://github.com/PDFTron/pdftron-flutter.git"
     source: git
     version: "0.0.16"
@@ -820,7 +820,7 @@ packages:
       name: pubspec_parse
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.7"
+    version: "0.1.8"
   quiver:
     dependency: transitive
     description:
@@ -897,7 +897,7 @@ packages:
       name: shared_preferences_windows
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.2+2"
+    version: "0.0.2+3"
   shelf:
     dependency: transitive
     description:
