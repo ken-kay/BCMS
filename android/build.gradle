@@ -2,7 +2,10 @@ buildscript {
     //ext.kotlin_version = '1.3.61'
     //ext.kotlin_version = '1.3.72'
     //ext.kotlin_version = '1.4.0'
-    ext.kotlin_version = '1.4.30'
+
+    //depreciated:
+    //ext.kotlin_version = '1.4.30'
+
     repositories {
         google()
         jcenter()
@@ -15,7 +18,9 @@ buildscript {
         //classpath 'com.android.tools.build:gradle:6.1.1'
         //classpath 'com.android.tools.build:gradle:3.5.3'
 
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //depreciated
+        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
         //classpath 'com.google.gms:google-screens.services:4.3.3'
         //classpath 'com.google.gms:google-services:4.3.3'
         classpath 'com.google.gms:google-services:4.3.5'
