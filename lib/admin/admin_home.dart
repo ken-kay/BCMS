@@ -30,8 +30,8 @@ class AdminHome extends StatelessWidget {
           backgroundColor:Colors.black,
           elevation:0.0,
           actions: <Widget>[
-
-            FlatButton.icon(
+            
+            TextButton.icon(
               icon:Icon(Icons.person),
               color: Colors.white,
               label: Text('Sign Out'),

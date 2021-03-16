@@ -58,8 +58,8 @@ class Home extends StatelessWidget {
               label: Text('Register'),
               onPressed: () => _showSettingsPanel(),
             ),
-             */
-            FlatButton.icon(
+             */           
+            TextButton.icon(
               icon:Icon(Icons.person),
               color: Colors.white,
               label: Text('Sign Out'),

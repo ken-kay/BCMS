@@ -35,8 +35,8 @@ class _SignInState extends State<SignIn> {
         backgroundColor: Colors.black,
         elevation: 0.0,
         title: Text('Sign in'),
-        actions: <Widget>[
-          FlatButton.icon(
+        actions: <Widget>[          
+          TextButton.icon(
             icon:Icon(Icons.person,
               color: Colors.black,
               ),
@@ -74,8 +74,8 @@ class _SignInState extends State<SignIn> {
                 });
               }
             ),
-            SizedBox(height:20.0),
-            RaisedButton(
+            SizedBox(height:20.0),            
+            ElevatedButton(
               color:Colors.pink,
               child:Text(
                 'Sign in',

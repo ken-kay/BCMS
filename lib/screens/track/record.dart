@@ -100,7 +100,7 @@ class _RecordState extends State<Record> {
                       ),
                       Padding(
                         padding: EdgeInsets.all(5.0),
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: ()=>_selectDate(context),
                           child: Text('Change Day'),
                           color: Colors.white,
@@ -114,7 +114,7 @@ class _RecordState extends State<Record> {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color: Colors.white,
@@ -142,7 +142,7 @@ class _RecordState extends State<Record> {
                       SizedBox(
                         width: 20.0,),
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color: Colors.white,
@@ -170,7 +170,7 @@ class _RecordState extends State<Record> {
 
                       SizedBox(width:20.0,),
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color:Colors.white,
@@ -200,7 +200,7 @@ class _RecordState extends State<Record> {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color: Colors.white,
@@ -227,7 +227,7 @@ class _RecordState extends State<Record> {
                       ),
                       SizedBox(width: 20.0,),
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color: Colors.white,
@@ -254,7 +254,7 @@ class _RecordState extends State<Record> {
                       ),
                       SizedBox(width: 20.0,),
                       Expanded(
-                        child:RaisedButton(
+                        child:ElevatedButton(
                           padding: EdgeInsets.symmetric(
                             vertical: 25.0),
                           color: Colors.white,
@@ -319,7 +319,7 @@ class _RecordState extends State<Record> {
               padding: EdgeInsets.symmetric(
                 vertical: 10.0),
               child: Center(
-                child: FlatButton(
+                child: TextButton(
                   child: Text(
                     'View List',),
                   onPressed: (){

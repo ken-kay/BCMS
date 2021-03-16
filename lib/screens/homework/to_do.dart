@@ -236,13 +236,15 @@ class _HomeworkState extends State<Homework>
         ],
       ),
       actions:<Widget> [
-        FlatButton(
+       
+        TextButton(
           child: Text('Cancel'),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        FlatButton(
+        
+        TextButton(
           child: Text('Save'),
           onPressed: (){
             if(_formChain.currentState.validate()) {

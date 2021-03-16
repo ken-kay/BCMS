@@ -107,7 +107,7 @@ class AdminSide extends StatelessWidget {
           ),
 
           //logout function
-          FlatButton.icon(
+          TextButton.icon(
             icon:Icon(Icons.person),
             //color: Colors.white,
             label: Text('Sign Out'),

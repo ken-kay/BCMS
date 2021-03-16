@@ -32,8 +32,8 @@ class _RegisterState extends State<Register> {
         backgroundColor: Colors.black,
         elevation: 0.0,
         title: Text('Register for BCMS App'),
-        actions: <Widget>[
-          FlatButton.icon(
+        actions: <Widget>[          
+          TextButton.icon(
               icon:Icon(Icons.person),
               color:Colors.white,
               label: Text('Sign In'),
@@ -74,7 +74,7 @@ class _RegisterState extends State<Register> {
                     }
                 ),
                 SizedBox(height:20.0),
-                RaisedButton(
+                ElevatedButton(
                     color:Colors.pink,
                     child:Text(
                       'Register',
