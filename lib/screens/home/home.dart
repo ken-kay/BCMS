@@ -6,12 +6,12 @@ import 'package:bcms_app/models/side.dart';
 import 'package:bcms_app/models/music.dart';
 import 'package:bcms_app/services/auth.dart';
 import 'package:bcms_app/services/database.dart';
-import 'package:bcms_app/screens/music/music_list.dart';
+//import 'package:bcms_app/screens/music/music_list.dart';
 //import 'package:bcms_app/screens/home/wrapper.dart';
 //import 'package:bcms_app/screens/music/settings_form.dart';
 //moved this one to home
 import 'package:bcms_app/screens/music/choose.dart';
-import 'package:bcms_app/screens/practice/practice.dart';
+//import 'package:bcms_app/screens/practice/practice.dart';
 //For the other pages, old iteration:
 //import 'package:bcms_app/screens/schedule/calendar.dart';
 //import 'package:bcms_app/screens/work/homework.dart';

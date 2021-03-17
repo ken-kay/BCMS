@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 
 import 'package:bcms_app/admin/admin_home.dart';
 import 'package:bcms_app/screens/home/home.dart';
-import 'package:bcms_app/screens/practice/practice.dart';
-import 'package:bcms_app/screens/practice/track.dart';
+//import 'package:bcms_app/screens/practice/practice.dart';
+//import 'package:bcms_app/screens/practice/track.dart';
 import 'package:bcms_app/screens/sheets/instruments.dart';
 import 'package:bcms_app/screens/homework/to_do.dart';
 import 'package:bcms_app/screens/track/attendance.dart';

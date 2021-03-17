@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:bcms_app/screens/home/home.dart';
+//import 'package:bcms_app/screens/home/home.dart';
 //for pullout menu
 import 'package:bcms_app/models/side.dart';
 

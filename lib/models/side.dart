@@ -8,14 +8,14 @@ import 'package:bcms_app/screens/sheets/instruments.dart';
 import 'package:bcms_app/screens/track/attendance.dart';
 //for sign out function
 import 'package:bcms_app/services/auth.dart';
-import 'package:bcms_app/screens/practice/practice.dart';
+//import 'package:bcms_app/screens/practice/practice.dart';
 //import 'package:bcms_app/screens/work/new.dart';
 import 'package:bcms_app/screens/practice/track.dart';
 
 //connect to the teacher side
 import 'package:bcms_app/admin/teacher.dart';
 
-import 'package:bcms_app/admin/simple.dart';
+//import 'package:bcms_app/admin/simple.dart';
 
 class Side extends StatelessWidget {
   final AuthService _auth = AuthService();

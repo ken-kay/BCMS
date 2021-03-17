@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:bcms_app/services/records_db.dart';
-import 'package:bcms_app/models/teacher.dart';
+//import 'package:bcms_app/models/teacher.dart';
 //pullout menu
 import 'package:bcms_app/models/side.dart';
 

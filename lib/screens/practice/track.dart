@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+//import 'package:provider/provider.dart';
 
-import 'package:bcms_app/screens/practice/log.dart';
+//import 'package:bcms_app/screens/practice/log.dart';
 import 'package:bcms_app/models/side.dart';
 import 'package:bcms_app/screens/practice/practice.dart';
 

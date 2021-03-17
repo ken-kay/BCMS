@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 
 import 'package:bcms_app/models/music.dart';
-import 'package:bcms_app/models/user.dart';
-import 'package:bcms_app/screens/authentication/sign_in.dart';
+//import 'package:bcms_app/models/user.dart';
+//import 'package:bcms_app/screens/authentication/sign_in.dart';
 import 'package:bcms_app/screens/track/attendance.dart';
 
 class MusicTile extends StatelessWidget {
