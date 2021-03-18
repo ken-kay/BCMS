@@ -45,8 +45,8 @@ dependencies:
   #provider: ^4.0.5
   provider: ^4.3.1
   flutter_spinkit: ^4.1.2+1
-  #intl: ^0.16.0
-  intl: ^0.16.1
+  intl: 0.17.0
+  #intl: ^0.16.1
   #share: ^0.6.4
   share: ^0.6.4+3
 
