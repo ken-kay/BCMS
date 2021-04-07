@@ -14,6 +14,7 @@ import 'package:bcms_app/screens/practice/track.dart';
 
 //connect to the teacher side
 import 'package:bcms_app/admin/teacher.dart';
+import 'package:bcms_app/admin/admin_home.dart';
 
 //import 'package:bcms_app/admin/simple.dart';
 
@@ -141,8 +142,9 @@ class Side extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                   // builder: (context)=>Teacher()),
-                  builder:(context)=>PinPutTest()),
+                   //builder: (context)=>Teacher()),
+                  //builder:(context)=>PinPutTest()),
+                  builder: (context)=>AdminHome()),
               );
             },
           ),

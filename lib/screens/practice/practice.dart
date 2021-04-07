@@ -101,7 +101,7 @@ class _PracticeState extends State<Practice> {
               children: <Widget>[
                 FormBuilder(
                 key: _dailyKey,
-                autovalidate: true,
+                //autovalidate: true,
                 readOnly: false,
                 child: Column(
                   children: <Widget>[

@@ -114,7 +114,7 @@ class _ChooseFormState extends State<ChooseForm> {
                     // context,
                     key: _formKey,
                     //key: _fbKey,
-                    autovalidate: true,
+                    //autovalidate: true,
 
                     /*
                     initialValue: {
