@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 
 import 'package:bcms_app/admin/admin_home.dart';
 import 'package:bcms_app/screens/home/home.dart';
+import 'package:bcms_app/screens/schedule/calendar.dart';
 //import 'package:bcms_app/screens/practice/practice.dart';
 //import 'package:bcms_app/screens/practice/track.dart';
 import 'package:bcms_app/screens/sheets/instruments.dart';
@@ -51,11 +52,25 @@ class AdminSide extends StatelessWidget {
               );
             },
           ),
+///*
+          ListTile(
+            leading: Icon(Icons.calendar_today),
+            title: Text('Schedule'),
+            onTap: (){
+              //go to Schedule page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context)=>Calendar()),
+              );
+            },
+          ),
 
+  //       */
 
           ListTile(
             leading: Icon(Icons.bookmark),
-            title: Text('Homework'),
+            title: Text('Assignments'),
             onTap: ()=>{
               //go to Assignments page
               Navigator.push(

@@ -105,7 +105,7 @@ class Side extends StatelessWidget {
             },
           ),
 
-
+/*
           ListTile(
             leading: Icon(Icons.event_note),
             title: Text('Logbook'),
@@ -120,7 +120,9 @@ class Side extends StatelessWidget {
           ),
 
 
+ */
 
+/*
           ListTile(
             leading: Icon(Icons.check),
             title: Text('Attendance'),
@@ -134,6 +136,8 @@ class Side extends StatelessWidget {
             },
           ),
 
+
+ */
           ListTile(
             leading: Icon(Icons.person_outline),
             title: Text('Teachers'),

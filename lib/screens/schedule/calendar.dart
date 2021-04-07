@@ -1,8 +1,8 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import 'package:table_calendar/table_calendar.dart';
 //just for pullout menu
-import 'package:bcms_app/models/side.dart';
+import 'package:bcms_app/admin/admin_side.dart';
 
 class Calendar extends StatelessWidget {
   @override
@@ -63,9 +63,9 @@ class _CalendarPageState extends State<CalendarPage> {
                 formatButtonShowsNext: false,
               ),
               startingDayOfWeek: StartingDayOfWeek.sunday,
-              onDaySelected: (date,events){
-                print(date.toIso8601String());
-              },
+              //onDaySelected: (date,events){
+                //print(date.toIso8601String());
+              //},
               builders: CalendarBuilders(
                 selectedDayBuilder: (context,date,events)=>Container(
                   margin: const EdgeInsets.all(4.0),
@@ -102,11 +102,11 @@ class _CalendarPageState extends State<CalendarPage> {
           ],
         ),
       ),
-      drawer: Side(),
+      drawer: AdminSide(),
     );
   }
 }
 
- */
+
 
 

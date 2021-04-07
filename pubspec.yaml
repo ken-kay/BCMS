@@ -19,16 +19,19 @@ dependencies:
   #pinput: ^0.2.0
 
   #to view PDFs
-  native_pdf_view: ^2.0.0
+  #native_pdf_view: ^2.0.0
   #flutter_full_pdf_viewer: ^1.0.4
   #flutter_full_pdf_viewer: ^1.0.6
   #flutter_plugin_pdf_viewer: ^1.0.7
-  #native_pdf_view: any
-  #flutter_pdfview:
+  native_pdf_view: any
+  flutter_pdfview:
+    #######
+    #different pdf view
+  flutter_cached_pdfview: ^0.3.5
   #pdftron_flutter:
   #  git:
   #    url: git://github.com/PDFTron/pdftron-flutter.git
-  #permission_handler: '3.0.1'
+  permission_handler: '3.0.1'
 
 #homework
   #I don't see myself using this:
