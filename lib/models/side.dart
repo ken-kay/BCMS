@@ -16,7 +16,7 @@ import 'package:bcms_app/screens/practice/track.dart';
 import 'package:bcms_app/admin/teacher.dart';
 import 'package:bcms_app/admin/admin_home.dart';
 
-//import 'package:bcms_app/admin/simple.dart';
+import 'package:bcms_app/admin/simple.dart';
 
 class Side extends StatelessWidget {
   final AuthService _auth = AuthService();
@@ -77,18 +77,18 @@ class Side extends StatelessWidget {
         /*
           ListTile(
             leading: Icon(Icons.calendar_today),
-            title: Text('Schedule'),
+            title: Text('Pin'),
             onTap: (){
               //go to Schedule page
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context)=>TodoScreen()),
+                    builder: (context)=>Pin()),
               );
             },
           ),
 
-         */
+       */
 
 
 
@@ -105,12 +105,12 @@ class Side extends StatelessWidget {
             },
           ),
 
-/*
+///*
           ListTile(
             leading: Icon(Icons.event_note),
             title: Text('Logbook'),
             onTap: (){
-              //go to Record page
+              //go to Practice page
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -120,7 +120,7 @@ class Side extends StatelessWidget {
           ),
 
 
- */
+ //*/
 
 /*
           ListTile(
@@ -148,7 +148,7 @@ class Side extends StatelessWidget {
                 MaterialPageRoute(
                    //builder: (context)=>Teacher()),
                   //builder:(context)=>PinPutTest()),
-                  builder: (context)=>AdminHome()),
+                  builder: (context)=>Pin()),
               );
             },
           ),

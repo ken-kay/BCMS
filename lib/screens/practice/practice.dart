@@ -6,7 +6,7 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:bcms_app/shared/constants.dart';
 import 'package:bcms_app/screens/practice/daily_db.dart';
 import 'package:bcms_app/screens/practice/daily.dart';
-//import 'package:bcms_app/screens/practice/log.dart';
+import 'package:bcms_app/screens/practice/log.dart';
 
 
 class Practice extends StatefulWidget {

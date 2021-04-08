@@ -17,6 +17,8 @@ dependencies:
   #for ADMIN PIN
   #pin_code_text_field:
   #pinput: ^0.2.0
+  pin_view: ^1.0.1
+
 
   #to view PDFs
   #native_pdf_view: ^2.0.0
