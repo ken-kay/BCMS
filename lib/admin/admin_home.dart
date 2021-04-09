@@ -39,7 +39,7 @@ class AdminHome extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/waiting.png'),
+              image: AssetImage('assets/admin_bg.png'),
               fit: BoxFit.cover,
             ),
           ),
