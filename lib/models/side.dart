@@ -83,7 +83,7 @@ class Side extends StatelessWidget {
           ListTile(
             tileColor: Colors.black12,
             leading: Icon(Icons.event_note),
-            title: Text('Logbook'),
+            title: Text('Practice'),
             onTap: (){
               //go to Practice page
               Navigator.push(

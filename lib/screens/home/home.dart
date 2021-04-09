@@ -36,9 +36,9 @@ class Home extends StatelessWidget {
         ),
         //For registration
         floatingActionButton: FloatingActionButton.extended(
-          label: Text('Register'),
+          label: Text('Register for Lessons'),
           icon: Icon(Icons.music_note),
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.purple[600],
           onPressed: (){
             Navigator.push(
               context,
