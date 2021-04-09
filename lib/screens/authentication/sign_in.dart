@@ -4,8 +4,6 @@ import 'package:bcms_app/services/auth.dart';
 import 'package:bcms_app/shared/loading.dart';
 import 'package:bcms_app/shared/constants.dart';
 
-//connect to the teacher side
-//import 'package:bcms_app/admin/teacher.dart';
 
 class SignIn extends StatefulWidget {
 
@@ -17,7 +15,6 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-
   final AuthService _auth =AuthService();
   final _formKey = GlobalKey<FormState>();
   bool loading=false;
@@ -46,7 +43,6 @@ class _SignInState extends State<SignIn> {
               widget.toggleView();
             }
           )
-
         ],
       ),
       body: Container(
@@ -63,6 +59,8 @@ class _SignInState extends State<SignIn> {
                 setState(()=>email=val);
               }
             ),
+
+
             SizedBox(height:20.0),
             TextFormField(
                 decoration: textInputDecoration.copyWith(hintText: 'Password'),
@@ -74,6 +72,8 @@ class _SignInState extends State<SignIn> {
                 });
               }
             ),
+
+
             SizedBox(height:20.0),
             RaisedButton(
               color:Colors.pink,
@@ -94,6 +94,7 @@ class _SignInState extends State<SignIn> {
                 }
               }
             ),
+
 
             SizedBox(height: 12.0),
             Text(
@@ -117,9 +118,3 @@ password: words1234
 email: new@gmail.com
 password: pass1234
 */
-
-/*
-Created a teacher account
-mrsmith@gmail.com
-smith1234
- */

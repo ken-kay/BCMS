@@ -39,31 +39,28 @@ class _RegisterState extends State<Register> {
               label: Text('Sign In'),
               onPressed: ()=> widget.toggleView(),
 
-              //Trying to fix the register part
-              //onPressed: (){
-            //                widget.toggleView();
-            //              }
-
-
           ),
         ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical:20.0, horizontal:50.0),
-        /*child: RaisedButton(child:Text('Sign in Anon'),onPressed: () async{dynamic result = await _auth.signInAnon();if(result==null){print('error signing in');}else {print('signed in');print(result.uid);}},)*/
         child:Form(
           key: _formKey,
           child:Column(
               children:<Widget>[
+
+
                 SizedBox(height:20.0),
                 TextFormField(
-                  //use this line anywhere there's a validation box
+                  //used for validation
                   decoration: textInputDecoration.copyWith(hintText: 'Email'),
                     validator: (val)=>val.isEmpty ? 'Enter an email' : null,
                     onChanged: (val){
                       setState(()=>email=val);
                     }
                 ),
+
+
                 SizedBox(height:20.0),
                 TextFormField(
                     decoration: textInputDecoration.copyWith(hintText: 'Password'),
@@ -73,6 +70,8 @@ class _RegisterState extends State<Register> {
                       setState(()=>password=val);
                     }
                 ),
+
+
                 SizedBox(height:20.0),
                 RaisedButton(
                     color:Colors.pink,
@@ -93,6 +92,8 @@ class _RegisterState extends State<Register> {
                       }
                     }
                 ),
+
+
                 SizedBox(height: 12.0),
                 Text(
                   error,
@@ -100,10 +101,8 @@ class _RegisterState extends State<Register> {
                 ),
               ],
           ),
-
         ),
       ),
-
     );
   }
 }

@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-//import 'package:bcms_app/screens/home/home.dart';
 //for pullout menu
 import 'package:bcms_app/models/side.dart';
+
 
 class Homework extends StatefulWidget {
   final FirebaseUser user;
@@ -39,19 +38,21 @@ class _HomeworkState extends State<Homework>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        titleSpacing: 6.0,
-        backgroundColor: Colors.pink,
+        titleSpacing: 10.0,
+        backgroundColor: Colors.indigo,
         leading: Padding(
           padding: const EdgeInsets.all(11.0),
           child: GestureDetector(
             onTap: () {
               print("Tapped");
             },
+           /*
             child: Image.asset(
-              'assets/app-bg.png',
+              'assets/logo.png',
               height: 100.0,
               width: 100.0,
             ),
+            */
           ),
         ),
 
@@ -59,14 +60,14 @@ class _HomeworkState extends State<Homework>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              "WorkList",
+              "Homework",
               style: TextStyle(
+                  //color: Colors.black,
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.5
               ),
             ),
-
           ],
         ),
         centerTitle: true,
@@ -163,8 +164,8 @@ class _HomeworkState extends State<Homework>
                                 ),
 
                                 trailing: IconButton(
-                                  color: Colors.red,
-                                  icon: Icon(Icons.delete),
+                                  color: Colors.black,
+                                  icon: Icon(Icons.delete, size: 30.0,),
                                   onPressed: () {
                                     print("${ds['task']} is deleted");
                                     Firestore.instance
@@ -198,7 +199,7 @@ class _HomeworkState extends State<Homework>
       floatingActionButton: FloatingActionButton(
         elevation: 9.0,
         child: Icon(Icons.add),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.green,
         onPressed: () {
           _showFormDialog();
         },
@@ -218,11 +219,13 @@ class _HomeworkState extends State<Homework>
               child: ListTile(
                 title: TextFormField(
                   controller: _textController,
+                  //remove warning
+                  // ignore: missing_return
                   validator: (val){
                     if(val.isEmpty) {
                       return 'Please enter work';
                     }
-                    },
+                  },
                   decoration: InputDecoration(
                     hintText: 'Enter Homework',
                     labelText: 'To Do',

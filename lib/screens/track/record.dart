@@ -1,11 +1,10 @@
-//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-//Just for the pullout
-import 'package:bcms_app/models/side.dart';
-//import 'package:bcms_app/models/teacher.dart';
+
 import 'package:bcms_app/services/records_db.dart';
 import 'package:bcms_app/screens/track/list.dart';
+//Just for the pullout
+import 'package:bcms_app/admin/admin_side.dart';
 
 class Record extends StatefulWidget {
   @override
@@ -32,8 +31,8 @@ class _RecordState extends State<Record> {
     final DateTime picked=await showDatePicker(
         context: context,
         initialDate: selectedDate,
-        firstDate: DateTime(2020,1),
-        lastDate: DateTime(2020,12)
+        firstDate: DateTime(2021,1),
+        lastDate: DateTime(2021,12)
     );
     if(picked!=null&&picked!=selectedDate){
       if(picked.isAfter(DateTime.now()))return;
@@ -52,7 +51,7 @@ class _RecordState extends State<Record> {
     if(selectedDate.weekday==6)selectedDate=selectedDate.add(Duration(days:-1));
     day.refresh();
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.lightBlueAccent,
       body:SafeArea(
         child: ListView(
           children:<Widget>[
@@ -65,7 +64,7 @@ class _RecordState extends State<Record> {
               ),
               child: Center(
                 child: Text(
-                  'Students',
+                  'Attendance',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 15.0,
@@ -284,7 +283,6 @@ class _RecordState extends State<Record> {
               )
             ),
 
-            // /*
             Container(
               padding: EdgeInsets.symmetric(
                   vertical: 50.0,
@@ -314,7 +312,7 @@ class _RecordState extends State<Record> {
 
               ),
             ),
-// */
+
             Container(
               padding: EdgeInsets.symmetric(
                 vertical: 10.0),
@@ -326,7 +324,7 @@ class _RecordState extends State<Record> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context)=>Teaching())
+                        builder: (context)=>ClassTime())
                     );
                   },
                 ),
@@ -335,7 +333,7 @@ class _RecordState extends State<Record> {
           ],
         ),
       ),
-      drawer: Side(),
+      drawer: AdminSide(),
     );
   }
 }

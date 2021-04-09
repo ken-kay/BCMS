@@ -3,24 +3,15 @@ import 'package:flutter/widgets.dart';
 
 import 'package:bcms_app/screens/home/home.dart';
 import 'package:bcms_app/screens/homework/to_do.dart';
-//import 'package:bcms_app/screens/schedule/calendar.dart';
 import 'package:bcms_app/screens/sheets/instruments.dart';
-import 'package:bcms_app/screens/track/attendance.dart';
+import 'package:bcms_app/screens/practice/track.dart';
 //for sign out function
 import 'package:bcms_app/services/auth.dart';
-//import 'package:bcms_app/screens/practice/practice.dart';
-//import 'package:bcms_app/screens/work/new.dart';
-import 'package:bcms_app/screens/practice/track.dart';
-
 //connect to the teacher side
-import 'package:bcms_app/admin/teacher.dart';
-import 'package:bcms_app/admin/admin_home.dart';
-
-import 'package:bcms_app/admin/simple.dart';
+import 'package:bcms_app/admin/access.dart';
 
 class Side extends StatelessWidget {
   final AuthService _auth = AuthService();
-
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -32,7 +23,7 @@ class Side extends StatelessWidget {
               'Menu',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 25.0
+                  fontSize: 40.0
               ),
             ),
             decoration:BoxDecoration(
@@ -59,8 +50,10 @@ class Side extends StatelessWidget {
             },
           ),
 
+
           ListTile(
-            leading: Icon(Icons.bookmark),
+            tileColor: Colors.black12,
+            leading: Icon(Icons.assignment),
             title: Text('Homework'),
             onTap: ()=>{
             //go to Assignments page
@@ -69,27 +62,8 @@ class Side extends StatelessWidget {
             MaterialPageRoute(
             builder: (context) => Homework()),
             ),
-          },
-          ),
-
-
-//Didn't need the calendar
-        /*
-          ListTile(
-            leading: Icon(Icons.calendar_today),
-            title: Text('Pin'),
-            onTap: (){
-              //go to Schedule page
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context)=>Pin()),
-              );
             },
           ),
-
-       */
-
 
 
           ListTile(
@@ -105,7 +79,9 @@ class Side extends StatelessWidget {
             },
           ),
 
+
           ListTile(
+            tileColor: Colors.black12,
             leading: Icon(Icons.event_note),
             title: Text('Logbook'),
             onTap: (){
@@ -119,48 +95,28 @@ class Side extends StatelessWidget {
           ),
 
 
-/*
           ListTile(
-            leading: Icon(Icons.check),
-            title: Text('Attendance'),
-            onTap: (){
-              //go to Record page
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context)=>Attendance()),
-              );
-            },
-          ),
-
-
- */
-          ListTile(
-            leading: Icon(Icons.person_outline),
+            leading: Icon(Icons.account_balance_outlined),
             title: Text('Teachers'),
             onTap: (){
               //go to Record page
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                   //builder: (context)=>Teacher()),
-                  //builder:(context)=>PinPutTest()),
                   builder: (context)=>Pin()),
               );
             },
           ),
 
+
           //logout function
           FlatButton.icon(
             icon:Icon(Icons.close),
-            
             label: Text('Sign Out'),
             onPressed:() async{
               await _auth.signOut();
             },
           ),
-
-
         ],
       ),
     );

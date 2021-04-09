@@ -10,7 +10,7 @@ class Calendar extends StatelessWidget {
     return MaterialApp(
       title: 'Schedule',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        backgroundColor: Colors.black,
       ),
       home: CalendarPage(),
     );
@@ -56,15 +56,14 @@ class _CalendarPageState extends State<CalendarPage> {
               headerStyle: HeaderStyle(
                 centerHeaderTitle: true,
                 formatButtonDecoration: BoxDecoration(
-                  color: Colors.purple,
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(20.0),
                 ),
                 formatButtonTextStyle: TextStyle(color:Colors.white),
                 formatButtonShowsNext: false,
               ),
               startingDayOfWeek: StartingDayOfWeek.sunday,
-              //onDaySelected: (date,events){
-                //print(date.toIso8601String());
+
               //},
               builders: CalendarBuilders(
                 selectedDayBuilder: (context,date,events)=>Container(
@@ -95,7 +94,6 @@ class _CalendarPageState extends State<CalendarPage> {
                         ),
                       )
                     ),
-
               ),
               calendarController: _controller,
             )

@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-//import 'package:bcms_app/screens/home/home.dart';
 //for pullout menu
 import 'package:bcms_app/models/side.dart';
+
 
 class Track extends StatefulWidget {
   final FirebaseUser user;
@@ -48,7 +47,7 @@ class _TrackState extends State<Track>
               print("Tapped");
             },
             child: Image.asset(
-              'assets/app-bg.png',
+              'assets/bcms_logo.png',
               height: 100.0,
               width: 100.0,
             ),
@@ -59,7 +58,7 @@ class _TrackState extends State<Track>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              "Practice Practice Practice",
+              "Practice",
               style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
@@ -274,53 +273,3 @@ class _TrackState extends State<Track>
     }
   }
 }
-
-
-
-/*
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-//import 'package:provider/provider.dart';
-
-//import 'package:bcms_app/screens/practice/log.dart';
-import 'package:bcms_app/models/side.dart';
-import 'package:bcms_app/screens/practice/practice.dart';
-
-class Track extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Practice Practice Practice'),
-        ),
-        body: Center(
-          child: Column(
-            children:<Widget> [
-              Container(
-
-              )
-            ],
-          ),
-        ),
-        floatingActionButton: FloatingActionButton.extended(
-          label: Text('Practice Session'),
-          icon: Icon(Icons.event_note),
-          backgroundColor: Colors.green,
-          onPressed: (){
-            Navigator.push(
-            context,
-          MaterialPageRoute(
-            builder: (context)=>Practice()),
-            );
-          },
-        ),
-
-        drawer: Side(),
-      ),
-    );
-  }
-}
-
-
- */

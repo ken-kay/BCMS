@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:bcms_app/services/records_db.dart';
-//import 'package:bcms_app/models/teacher.dart';
 //pullout menu
-import 'package:bcms_app/models/side.dart';
+import 'package:bcms_app/admin/admin_side.dart';
 
-class Teaching extends StatefulWidget {
+
+class ClassTime extends StatefulWidget {
   @override
-  _TeachingState createState() => _TeachingState();
+  _ClassTimeState createState() => _ClassTimeState();
 }
 
-class _TeachingState extends State<Teaching> {
+class _ClassTimeState extends State<ClassTime> {
   DB db=DB();
 
   @override
@@ -68,7 +68,6 @@ class _TeachingState extends State<Teaching> {
                               fontSize: 15.0),
                             ),
                           ),
-
                           Container(
                             child: Text(
                               '${day.total}/${day.working}',
@@ -119,7 +118,7 @@ class _TeachingState extends State<Teaching> {
           },
         )
       ),
-     drawer: Side(),
+     drawer: AdminSide(),
     );
   }
 }

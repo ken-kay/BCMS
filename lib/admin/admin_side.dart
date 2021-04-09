@@ -4,13 +4,12 @@ import 'package:flutter/widgets.dart';
 import 'package:bcms_app/admin/admin_home.dart';
 import 'package:bcms_app/screens/home/home.dart';
 import 'package:bcms_app/screens/schedule/calendar.dart';
-//import 'package:bcms_app/screens/practice/practice.dart';
-//import 'package:bcms_app/screens/practice/track.dart';
-import 'package:bcms_app/screens/sheets/instruments.dart';
-import 'package:bcms_app/screens/homework/to_do.dart';
+import 'package:bcms_app/admin/sheet_music.dart';
+import 'package:bcms_app/admin/teaching.dart';
 import 'package:bcms_app/screens/track/attendance.dart';
 //for sign out function
 import 'package:bcms_app/services/auth.dart';
+
 
 class AdminSide extends StatelessWidget {
   final AuthService _auth = AuthService();
@@ -23,10 +22,10 @@ class AdminSide extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             child: Text(
-              'Menu',
+              'ADMIN',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 25.0
+                  fontSize: 60.0,
               ),
             ),
             decoration:BoxDecoration(
@@ -34,13 +33,14 @@ class AdminSide extends StatelessWidget {
                 image: DecorationImage(
                     fit:BoxFit.fill,
                     // Change this later
-                    image:AssetImage('assets/app-bg.png')
+                    image:AssetImage('assets/home.png')
                 )
             ),
           ),
 
 
           ListTile(
+            tileColor: Colors.black12,
             leading: Icon(Icons.home),
             title: Text('AdminHome'),
             onTap: (){
@@ -52,10 +52,11 @@ class AdminSide extends StatelessWidget {
               );
             },
           ),
-///*
+
+
           ListTile(
             leading: Icon(Icons.calendar_today),
-            title: Text('Schedule'),
+            title: Text('Calendar'),
             onTap: (){
               //go to Schedule page
               Navigator.push(
@@ -66,18 +67,18 @@ class AdminSide extends StatelessWidget {
             },
           ),
 
-  //       */
 
           ListTile(
-            leading: Icon(Icons.bookmark),
-            title: Text('Assignments'),
-            onTap: ()=>{
-              //go to Assignments page
+            tileColor: Colors.black12,
+            leading: Icon(Icons.supervisor_account_sharp,),
+            title: Text('Student Work'),
+            onTap: (){
+              //go to Schedule page
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => Homework()),
-              ),
+                    builder: (context)=>Teaching()),
+              );
             },
           ),
 
@@ -90,12 +91,14 @@ class AdminSide extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context)=>Sheets()),
+                    builder: (context)=>AdminSheets()),
               );
             },
           ),
 
+
           ListTile(
+            tileColor: Colors.black12,
             leading: Icon(Icons.event_note),
             title: Text('Attendance'),
             onTap: (){
@@ -107,6 +110,7 @@ class AdminSide extends StatelessWidget {
               );
             },
           ),
+
 
           ListTile(
             leading: Icon(Icons.arrow_back),
@@ -121,6 +125,7 @@ class AdminSide extends StatelessWidget {
             },
           ),
 
+
           //logout function
           FlatButton.icon(
             icon:Icon(Icons.person),
@@ -130,8 +135,6 @@ class AdminSide extends StatelessWidget {
               await _auth.signOut();
             },
           ),
-
-
         ],
       ),
     );

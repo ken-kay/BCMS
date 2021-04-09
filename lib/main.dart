@@ -4,20 +4,10 @@ import 'package:provider/provider.dart';
 import 'package:bcms_app/models/user.dart';
 import 'package:bcms_app/screens/home/wrapper.dart';
 import 'package:bcms_app/services/auth.dart';
-//import 'models/work.dart';
-//import 'package:bcms_app/screens/work/homework.dart';
+
 
 void main() => runApp(MyApp());
 
-/*void main(){
-  runApp(
-    ChangeNotifierProvider(
-      create: (_)=>HomeworkApp(),
-      child:MyApp(),
-    ),
-  );
-}
-*/
 class MyApp extends StatelessWidget {
   //doesn't seem needed now:
   // const MyApp({Key key}) : super(key: key);

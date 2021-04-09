@@ -2,8 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:bcms_app/models/user.dart';
 import 'package:bcms_app/models/music.dart';
-//import 'package:bcms_app/models/profile.dart';
-//import 'package:bcms_app/screens/practice/practice_db.dart';
+
 
 class DatabaseService{
 
@@ -55,7 +54,6 @@ class DatabaseService{
       studentId:snapshot.data['studentId'],
     );
   }
-
 
 
   //get instrument stream
