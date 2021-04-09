@@ -129,7 +129,6 @@ class AdminSide extends StatelessWidget {
           //logout function
           FlatButton.icon(
             icon:Icon(Icons.person),
-            //color: Colors.white,
             label: Text('Sign Out'),
             onPressed:() async{
               await _auth.signOut();

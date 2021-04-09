@@ -118,3 +118,8 @@ password: words1234
 email: new@gmail.com
 password: pass1234
 */
+/*
+Created a teacher account
+mrsmith@gmail.com
+smith1234
+ */
