@@ -13,7 +13,6 @@ A management application for music students and teachers of the BCMS program
 - Pin verification required
 - View registered students
 - Check schedule
-- Teaching notes
 - Access sheet music and learning materials
 - Record attendance 
 

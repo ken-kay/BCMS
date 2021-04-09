@@ -12,8 +12,8 @@ class AdminSheets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sheet Music'),
-        backgroundColor: Colors.blue,
+        title: const Text('Sheets'),
+        backgroundColor: Colors.black,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -85,7 +85,7 @@ class PDFViewerFromAsset extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PDF From Asset'),
+        title: const Text('Sheets'),
         actions: <Widget>[
           StreamBuilder<String>(
               stream: _pageCountController.stream,
@@ -96,7 +96,7 @@ class PDFViewerFromAsset extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.blue[900],
+                        color: Colors.black,
                       ),
                       child: Text(snapshot.data),
                     ),

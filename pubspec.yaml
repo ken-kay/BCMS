@@ -1,7 +1,7 @@
+#BCMS dependencies
 name: bcms_app
 description: A mobile app for music students
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+
 version: 1.0.0+1
 
 environment:
@@ -70,12 +70,8 @@ dependencies:
   #http:
   http: ^0.12.2
 
-  #mockito: 4.1.1
-  #json_annotation: ^3.0.0
+
   english_words: ^3.1.0
-#havin issues with these
-  #flutter_sms: ^2.0.0+2
-  #firebase_in_app_messaging: ^0.1.1+3
   cupertino_icons: ^0.1.3
 
 
@@ -85,8 +81,6 @@ dev_dependencies:
 
 #Icons
   flutter_launcher_icons: ^0.7.4
-  #json_serializable: ^3.0.0
-  #build_runner: ^1.10.0
 
 
 #For if/when I make an icon for this app:

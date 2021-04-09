@@ -5,7 +5,6 @@ import 'package:bcms_app/admin/admin_home.dart';
 import 'package:bcms_app/screens/home/home.dart';
 import 'package:bcms_app/screens/schedule/calendar.dart';
 import 'package:bcms_app/admin/sheet_music.dart';
-import 'package:bcms_app/admin/teaching.dart';
 import 'package:bcms_app/screens/track/attendance.dart';
 //for sign out function
 import 'package:bcms_app/services/auth.dart';
@@ -70,20 +69,6 @@ class AdminSide extends StatelessWidget {
 
           ListTile(
             tileColor: Colors.black12,
-            leading: Icon(Icons.supervisor_account_sharp,),
-            title: Text('Student Work'),
-            onTap: (){
-              //go to Schedule page
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context)=>Teaching()),
-              );
-            },
-          ),
-
-
-          ListTile(
             leading: Icon(Icons.music_note),
             title: Text('Sheet Music'),
             onTap: (){
@@ -98,7 +83,6 @@ class AdminSide extends StatelessWidget {
 
 
           ListTile(
-            tileColor: Colors.black12,
             leading: Icon(Icons.event_note),
             title: Text('Attendance'),
             onTap: (){
@@ -113,6 +97,7 @@ class AdminSide extends StatelessWidget {
 
 
           ListTile(
+            tileColor: Colors.black12,
             leading: Icon(Icons.arrow_back),
             title: Text('Return to Student App'),
             onTap: (){

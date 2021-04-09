@@ -30,7 +30,7 @@ class Sheets extends StatelessWidget {
                 ),
               ),
             ),
-            hoverColor: Colors.yellow,
+            hoverColor: Colors.white,
             color: Colors.black12,
             child: const Text('Guitar'),
           ),
@@ -45,7 +45,7 @@ class Sheets extends StatelessWidget {
                 ),
               ),
             ),
-            hoverColor: Colors.yellow,
+            hoverColor: Colors.white,
             color: Colors.black12,
             child: const Text('Piano'),
           ),
@@ -60,7 +60,7 @@ class Sheets extends StatelessWidget {
                 ),
               ),
             ),
-            hoverColor: Colors.yellow,
+            hoverColor: Colors.white,
             color: Colors.black12,
             child: const Text('Violin'),
           ),
@@ -85,7 +85,7 @@ class PDFViewerFromAsset extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PDF From Asset'),
+        title: const Text('Sheet Music'),
         actions: <Widget>[
           StreamBuilder<String>(
               stream: _pageCountController.stream,
@@ -96,7 +96,7 @@ class PDFViewerFromAsset extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.blue[900],
+                        color: Colors.black,
                       ),
                       child: Text(snapshot.data),
                     ),
@@ -106,6 +106,8 @@ class PDFViewerFromAsset extends StatelessWidget {
               }),
         ],
       ),
+
+      //constant from model to view PDFs
       body: PDF(
         enableSwipe: true,
         swipeHorizontal: true,
