@@ -119,7 +119,12 @@ email: new@gmail.com
 password: pass1234
 */
 /*
-Created a teacher account
+Created test account
 mrsmith@gmail.com
 smith1234
+ */
+/*
+Tested after completed work
+sunday@gmail.com
+days1234
  */
